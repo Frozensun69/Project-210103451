@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./main.css"/>
+    <title>VElo</title>
+    <style>
+        .fe{
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: consolas;
+        }
+    .container{
+    width: 1000px;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    display: grid;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #333;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #ff0057;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  grid;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+ 
+    </style>
+</head>
+<body>
+
+    <div class="he">
+        <h1 class="logo">VElo </h1>
+        <div class="lol">
+            
+            <a class="href" style="text-decoration:none" href="main.html">Home</a>
+            <a class="href" href="guide.html" style="text-decoration:none"> Guides</a>
+        </div>
+        <div class="log">
+            <a href="Login.html" style="text-decoration:none">login</a>
+        </div>
+    </div>
+   <div class="fe">
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://valorant-stats.com/images/agents/brimstone.png">
+                    <h3>Brimstone</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>The best character to divert enemy positions and protect SPIKE from unwanted guests</p>
+                        <a href="https://valorant.fandom.com/wiki/Brimstone" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://static.wikia.nocookie.net/valorant/images/9/91/Viper_artwork.png/revision/latest?cb=20200618100118&path-prefix=ru">
+                    <h3>Viper</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>The best character that can show himself on any map.</p>
+                        <a href="https://valorant.fandom.com/wiki/Viper" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="https://static.wikia.nocookie.net/valorant-lore/images/9/99/Killjoy_-_Full_body.png/revision/latest?cb=20210123180615">
+                    <h3>Killjoy</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Alone on the field is not a warrior, but a killjoy alone can hold back any danger.</p>
+                        <a href="https://valorant.fandom.com/wiki/Killjoy" target="_blank">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    
+      <div class="finish">
+        
+        <div class="sus">
+        <a class="turaktal" href="main.html" style="text-decoration:none" >VElo</a>
+        <a class="turaktal" href="https://www.riotgames.com/en" style="text-decoration:none" target="_blanck">Riot</a>
+        <a class="turaktal" style="text-decoration:none">Policy</a>
+      </div>
+      <div class="sus">
+      <a class="turaktal" style="text-decoration:none">Navigation:</a>
+      <a class="turaktal" style="text-decoration:none" href="main.html">Home</a>
+      <a class="turaktal" style="text-decoration:none" href="line.html">Lineups</a>
+      <a class="turaktal" style="text-decoration:none" href="guide.html">Guides</a>
+      </div>
+      <div class="sus">
+        <div class="turaktal">Made by</div>
+        <div class="turaktal">Kuzembaev Adilzhan</div>
+        <div class="turaktal">210103451@stu.sdu.edu.kz</div>
+        
+        </div>
+      </div>
+      
+</body>   
+</html>
